@@ -10,6 +10,9 @@ To make an element responsive, just add the `responsive` attribute to it.
 ```
 
 And that's when the magic begins.
+
+- - -
+
 Responsive elements can have JavaScript in them which automatically re-executes and rerenders the element according to window sizes and when the window size changes. Just wrap the JS code inside double curly brackets, like this:
 
 `{{//YouJSCodeHere}}`
@@ -23,8 +26,12 @@ You can either put it inside the tag:
 Or in the content:
 
 ```html
-  <span style="color: blue; fontSize: {{10+5}}" responsive>Hello {{"world"+"s"}}</span>
+  <span style="color: blue;" responsive>Hello {{"world"+"s"}}</span>
 ```
+
+You can put them anywhere within the element.
+
+- - -
 
 And now, to add responsive values (values that are dependent with the window size), just place
 the `R('mobile', 'tablet', 'desktop')` function call inside the JS script (between the curlies).
