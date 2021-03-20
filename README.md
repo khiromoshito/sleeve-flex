@@ -42,7 +42,7 @@ on the current device size, respectively.
 For example, if you want a text to have the color `blue` on mobile, `red` on tablet, and `green` on desktop, you can just say:
 
 ```html
-  <span style="color: {{ R('blue', 'red', 'green'}};" responsive>Hello world</span>
+  <span style="color: {{ R('blue', 'red', 'green') }};" responsive>Hello world</span>
 ```
 
 And it will automatically adjust the color accordingly.
